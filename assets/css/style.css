@@ -17,6 +17,10 @@ img {
   width: 100%;
 }
 
+ul{
+  list-style: none;
+}
+
 body {
   background-color: var(--charcoal-grey);
   font-family: 'Roboto';
@@ -67,5 +71,34 @@ h1 {
   margin-top: 2rem;
   font-size: 3.6rem;
   color: var(--dark-slate-grey);
-  padding: 2rem;
+  padding: 2rem 2.4rem 1.3rem 2.4rem;
+  letter-spacing: -.6px;
+}
+
+article p{
+  padding:0 1.5rem 0 2.4rem;
+  line-height: 1.5;
+  display: inline-block;
+}
+
+article ul {
+  padding-top: 1.15rem;
+  padding-left: 2.4rem;
+}
+
+article ul li{
+  display:inline-flex;
+  align-items: center;
+}
+
+article ul li p{
+  padding: 0 0 0 1rem;
+  line-height: 2.1;
+}
+
+
+
+article ul li img{
+  max-width: 1.25rem;
+  display: inline-block;
 }
