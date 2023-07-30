@@ -17,7 +17,7 @@ img {
   width: 100%;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -72,11 +72,11 @@ h1 {
   font-size: 3.6rem;
   color: var(--dark-slate-grey);
   padding: 2rem 2.4rem 1.3rem 2.4rem;
-  letter-spacing: -.6px;
+  letter-spacing: -0.6px;
 }
 
-article p{
-  padding:0 1.5rem 0 2.4rem;
+article p {
+  padding: 0 1.5rem 0 2.4rem;
   line-height: 1.5;
   display: inline-block;
 }
@@ -86,19 +86,35 @@ article ul {
   padding-left: 2.4rem;
 }
 
-article ul li{
-  display:inline-flex;
+article ul li {
+  display: inline-flex;
   align-items: center;
 }
 
-article ul li p{
+article ul li p {
   padding: 0 0 0 1rem;
   line-height: 2.1;
 }
 
-
-
-article ul li img{
+article ul li img {
   max-width: 1.25rem;
   display: inline-block;
+}
+
+article p.email {
+  margin-top: 2.2rem;
+  font-size: 0.75rem;
+  padding-left: 2.5rem;
+}
+
+article input.email {
+  display: block;
+  margin-top: 0.5rem;
+  margin-left: 2.5rem;
+  margin-bottom: 1.5rem;
+  width: 81%;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 2px solid grey;
 }
