@@ -112,9 +112,20 @@ article input.email {
   margin-top: 0.5rem;
   margin-left: 2.5rem;
   margin-bottom: 1.5rem;
+  padding-left: 1.3rem;
   width: 81%;
   height: 3.5rem;
   border-radius: 0.5rem;
   outline: none;
   border: 2px solid grey;
+  font-size: 1.05rem;
+}
+
+article .btn {
+  font-size: 1rem;
+  background-color: var(--charcoal-grey);
+  color: var(--white);
+  padding: 1.15rem 4.6rem;
+  border-radius: 0.5rem;
+  margin-left: 2.5rem;
 }
