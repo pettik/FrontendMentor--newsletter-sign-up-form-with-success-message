@@ -119,6 +119,7 @@ article input.email {
   outline: none;
   border: 2px solid grey;
   font-size: 1.05rem;
+  cursor: pointer;
 }
 
 article .btn {
@@ -128,4 +129,13 @@ article .btn {
   padding: 1.15rem 4.6rem;
   border-radius: 0.5rem;
   margin-left: 2.5rem;
+  cursor: pointer;
+  transition: background .3s, box-shadow .3s;
+  border:none;
+}
+
+
+article .btn:hover{
+background: linear-gradient(to left, rgb(255,82,121),rgb(232,113,79));
+box-shadow: 0 8px 15px rgba(232, 112, 79, 0.5);
 }
