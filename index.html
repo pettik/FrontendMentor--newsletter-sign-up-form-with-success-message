@@ -39,8 +39,11 @@
             <p>And much more!</p>
           </li>
         </ul>
-        <p class="email">Email Address</p>
-        <input type="email" class="email" />
+        <div class="input-labels">
+          <p class="email">Email Address</p>
+          <p class="email-error hidden">Valid email required</p>
+        </div>
+        <input type="email" class="email" id="email" />
         <button class="btn" id="btn-send">
           Subscribe to monthly newsletter
         </button>
@@ -86,5 +89,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/pettik/">Petr Bednarski</a>.
     </div>
+
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

@@ -11,6 +11,7 @@
   --charcoal-grey: rgb(54, 56, 78);
   --grey: rgb(146, 148, 160);
   --white: hsl(0, 0%, 100%);
+  --rose: rgb(255, 104, 100);
 }
 
 img {
@@ -53,7 +54,7 @@ main {
   background-color: var(--white);
   border-radius: 2rem;
   display: flex;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   padding: 1.5rem;
   column-gap: 1rem;
 }
@@ -75,7 +76,7 @@ h1 {
   letter-spacing: -0.6px;
 }
 
-article p {
+article > p {
   padding: 0 1.5rem 0 2.4rem;
   line-height: 1.5;
   display: inline-block;
@@ -101,10 +102,26 @@ article ul li img {
   display: inline-block;
 }
 
+article .input-labels {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: flex-end;
+  max-width: 81%;
+  font-size: 0.75rem;
+  margin: 0 auto 0 2.5rem;
+}
+
 article p.email {
   margin-top: 2.2rem;
-  font-size: 0.75rem;
-  padding-left: 2.5rem;
+}
+article .email-error {
+  font-weight: bold;
+  color: var(--rose);
+}
+
+.hidden {
+  display: none;
 }
 
 article input.email {
@@ -119,13 +136,33 @@ article input.email {
   outline: none;
   border: 2px solid grey;
   font-size: 1.05rem;
+  cursor: pointer;
+}
+
+article input.email:focus {
+  border: 2px solid var(--dark-slate-grey);
+}
+
+article input.email.error {
+  border: 2px solid var(--rose);
+  background-color: rgba(255, 232, 230, 1);
+  color: var(--rose);
 }
 
 article .btn {
   font-size: 1rem;
   background-color: var(--charcoal-grey);
   color: var(--white);
-  padding: 1.15rem 4.6rem;
+  padding: 1.2rem 4rem;
   border-radius: 0.5rem;
   margin-left: 2.5rem;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.15s;
+  border: none;
+  font-weight: bold;
+}
+
+article .btn:hover {
+  background: linear-gradient(to left, rgb(255, 82, 121), rgb(232, 113, 79));
+  box-shadow: 0 8px 15px rgba(232, 112, 79, 0.5);
 }
