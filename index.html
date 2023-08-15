@@ -19,61 +19,66 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="template_background"></div>
-    <div class="template_background2"></div>
-    <div class="template_background-mobile"></div>
-    <div class="template_background-mobile2"></div>
+    <nav>
+      <div class="template_background"></div>
+      <div class="template_background2"></div>
+      <div class="template_background-mobile"></div>
+      <div class="template_background-mobile2"></div>
+    </nav>
+    <main>
+      <section id="first">
+        <article>
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="icon list" />
+              <p>Product discovery and building what matters</p>
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="icon list" />
+              <p>Measuring to ensure updates are a success</p>
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="icon list" />
+              <p>And much more!</p>
+            </li>
+          </ul>
+          <div class="input-labels">
+            <p class="email">Email Address</p>
+            <p class="email-error hidden">Valid email required</p>
+          </div>
+          <label for="email" class="d-none">Email:</label>
+          <input type="email" class="email" id="email" name="email" />
 
-    <section id="first">
-      <article>
-        <h1>Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>
-            <img src="assets/images/icon-list.svg" alt="icon list" />
-            <p>Product discovery and building what matters</p>
-          </li>
-          <li>
-            <img src="assets/images/icon-list.svg" alt="icon list" />
-            <p>Measuring to ensure updates are a success</p>
-          </li>
-          <li>
-            <img src="assets/images/icon-list.svg" alt="icon list" />
-            <p>And much more!</p>
-          </li>
-        </ul>
-        <div class="input-labels">
-          <p class="email">Email Address</p>
-          <p class="email-error hidden">Valid email required</p>
+          <button class="btn" id="btn-send">
+            Subscribe to monthly newsletter
+          </button>
+        </article>
+        <div class="right-image">
+          <img alt="illustration desktop" id="illustrationImage" />
         </div>
-        <input type="email" class="email" id="email" />
-        <button class="btn" id="btn-send">
-          Subscribe to monthly newsletter
-        </button>
-      </article>
-      <div class="right-image">
-        <img alt="illustration desktop" id="illustrationImage" />
+      </section>
+
+      <section id="second" class="d-none">
+        <img src="assets/images/icon-success.svg" alt="success icon" />
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <span class="inputedEmail">ash@loremcompany.com</span>. Please open it
+          and click the button inside to confirm your subscription.
+        </p>
+        <button class="btn">Dismiss message</button>
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/pettik/">Petr Bednarski</a>.
       </div>
-    </section>
-
-    <section id="second" class="d-none">
-      <img src="assets/images/icon-success.svg" alt="success icon" />
-      <h1>Thanks for subscribing!</h1>
-      <p>
-        A confirmation email has been sent to
-        <span class="inputedEmail">ash@loremcompany.com</span>. Please open it
-        and click the button inside to confirm your subscription.
-      </p>
-      <button class="btn">Dismiss message</button>
-    </section>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/pettik/">Petr Bednarski</a>.
-    </div>
-
+    </footer>
     <script src="assets/js/app.js"></script>
   </body>
 </html>
