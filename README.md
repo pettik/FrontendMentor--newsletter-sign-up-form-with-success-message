@@ -28,7 +28,7 @@ My users should have been able to:
 
 Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
-## ➡️[LIVE PREVIEW](https://www.frontendmentor.io](https://pettik-newsletter-sign-up-form-with.netlify.app/)https://pettik-newsletter-sign-up-form-with.netlify.app/)⬅️
+## ➡️[LIVE PREVIEW][(https://www.frontendmentor.io](https://pettik-newsletter-sign-up-form-with.netlify.app/)https://pettik-newsletter-sign-up-form-with.netlify.app/)](https://pettik-newsletter-sign-up-form-with.netlify.app/)⬅️
 
 ## Timemanagement
 - start: 21st of July 2023
