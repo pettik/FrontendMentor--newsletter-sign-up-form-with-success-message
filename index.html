@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,19 +12,17 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <title>
-      Frontend Mentor | Newsletter sign-up form with success message
-    </title>
+    <title>Newsletter Sign-up Form | Frontend Mentor</title>
 
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <nav>
+    <div>
       <div class="template_background"></div>
       <div class="template_background2"></div>
       <div class="template_background-mobile"></div>
       <div class="template_background-mobile2"></div>
-    </nav>
+    </div>
     <main>
       <section id="first">
         <article>
@@ -48,16 +46,25 @@
             <p class="email">Email Address</p>
             <p class="email-error hidden">Valid email required</p>
           </div>
-          <label for="email" class="d-none">Email:</label>
-          <input type="email" class="email" id="email" name="email" />
+          <form id="newsletter-form" novalidate>
+            <label for="email" class="d-none">Email:</label>
 
-          <button class="btn" id="btn-send">
-            Subscribe to monthly newsletter
-          </button>
+            <input
+              type="email"
+              class="email"
+              id="email"
+              name="email"
+              required
+            />
+
+            <button type="submit" class="btn" id="btn-send">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
         </article>
-        <div class="right-image">
+        <figure class="right-image" aria-hidden="true">
           <img alt="illustration desktop" id="illustrationImage" />
-        </div>
+        </figure>
       </section>
 
       <section id="second" class="d-none">
@@ -68,7 +75,7 @@
           <span class="inputedEmail">ash@loremcompany.com</span>. Please open it
           and click the button inside to confirm your subscription.
         </p>
-        <button class="btn">Dismiss message</button>
+        <button type="button" class="btn">Dismiss message</button>
       </section>
     </main>
     <footer>
