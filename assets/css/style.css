@@ -176,6 +176,12 @@ article input.email.error {
   font-weight: bold;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}
+
 .btn:hover {
   background: linear-gradient(to left, rgb(255, 82, 121), rgb(232, 113, 79));
   box-shadow: 0 8px 15px rgba(232, 112, 79, 0.5);
@@ -240,11 +246,11 @@ article input.email.error {
 
 /* *********** HIDE IT *********** */
 .d-none {
-  display: none !important;
+  display: none;
 }
 
 /* *********** MEDIA QUERIES *********** */
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 58.125rem) {
   #first {
     padding: 0.5rem;
     column-gap: 0.25rem;
@@ -267,7 +273,7 @@ article input.email.error {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   body {
     background-color: white;
   }
