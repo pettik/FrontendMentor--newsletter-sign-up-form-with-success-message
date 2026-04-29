@@ -9,7 +9,20 @@ const secondSectionBtn = document.querySelector("#second .btn");
 const form = document.getElementById("newsletter-form");
 const imageElement = document.getElementById("illustrationImage");
 
+const requiredElements = [
+  emailInput,
+  emailError,
+  inputedEmail,
+  firstSection,
+  secondSection,
+  form,
+];
+
+const hasRequiredElements = requiredElements.every(Boolean);
+
 const overeniEmailu = function () {
+  if (!hasRequiredElements) return;
+
   const emailValue = emailInput.value.trim();
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -28,18 +41,24 @@ const overeniEmailu = function () {
   secondSection.classList.remove("d-none");
 };
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  overeniEmailu();
-});
+if (form && hasRequiredElements) {
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    overeniEmailu();
+  });
+}
 
-secondSectionBtn.addEventListener("click", () => {
-  emailInput.value = "";
-  firstSection.classList.remove("d-none");
-  secondSection.classList.add("d-none");
-});
+if (secondSectionBtn && emailInput && firstSection && secondSection) {
+  secondSectionBtn.addEventListener("click", () => {
+    emailInput.value = "";
+    firstSection.classList.remove("d-none");
+    secondSection.classList.add("d-none");
+  });
+}
 
 function updateImageSrc() {
+  if (!imageElement) return;
+
   imageElement.src =
     window.innerWidth >= 768
       ? "assets/images/illustration-sign-up-desktop.svg"
@@ -47,4 +66,7 @@ function updateImageSrc() {
 }
 
 updateImageSrc();
-window.addEventListener("resize", updateImageSrc);
+
+if (imageElement) {
+  window.addEventListener("resize", updateImageSrc);
+}
