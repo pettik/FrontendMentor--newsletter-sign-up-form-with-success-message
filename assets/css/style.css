@@ -249,6 +249,11 @@ article input.email.error {
   display: none;
 }
 
+#first.d-none,
+#second.d-none {
+  display: none;
+}
+
 /* *********** MEDIA QUERIES *********** */
 @media screen and (max-width: 58.125rem) {
   #first {
