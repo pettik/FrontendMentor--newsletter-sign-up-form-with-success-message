@@ -38,7 +38,9 @@
           </ul>
           <div class="input-labels">
             <p class="email">Email Address</p>
-            <p class="email-error hidden">Valid email required</p>
+            <p id="email-error" class="email-error hidden">
+              Valid email required
+            </p>
           </div>
           <form id="newsletter-form" novalidate>
             <label for="email" class="sr-only">Email:</label>
@@ -49,6 +51,7 @@
               id="email"
               name="email"
               required
+              aria-describedby="email-error"
             />
 
             <button type="submit" class="btn" id="btn-send">
