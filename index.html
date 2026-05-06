@@ -38,7 +38,7 @@
           </ul>
           <div class="input-labels">
             <p class="email">Email Address</p>
-            <p id="email-error" class="email-error hidden">
+            <p id="email-error" class="email-error hidden" role="alert">
               Valid email required
             </p>
           </div>
@@ -68,7 +68,13 @@
         </figure>
       </section>
 
-      <section id="second" class="d-none">
+      <section
+        id="second"
+        class="d-none"
+        tabindex="-1"
+        role="status"
+        aria-live="polite"
+      >
         <img src="assets/images/icon-success.svg" alt="success icon" />
         <h1>Thanks for subscribing!</h1>
         <p>

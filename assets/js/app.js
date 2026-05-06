@@ -41,6 +41,7 @@ const handleFormSubmit = function () {
 
   firstSection.classList.add("d-none");
   secondSection.classList.remove("d-none");
+  secondSection.focus();
 };
 
 if (form && hasRequiredElements) {
@@ -55,6 +56,7 @@ if (secondSectionBtn && emailInput && firstSection && secondSection) {
     emailInput.value = "";
     firstSection.classList.remove("d-none");
     secondSection.classList.add("d-none");
+    emailInput.focus();
   });
 }
 
